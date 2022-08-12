@@ -6,19 +6,9 @@ import Seo from "../components/seo"
 
 const SecondPage = () => (
   <Layout>
-    <h1><b>Performance Consulting</b> is...</h1>
+    <h1>Performance Consulting is...</h1>
     <p>...performed by performance consultants who use more of a systems-thinking approach to resolving workplace performance</p>
-<p> And this site is designed to teach you all about it.</p>
-<p>Read more:</p>
-<Link>What is performance consulting?</Link>
-<br />
-<Link>Misconceptions about performance consulting</Link>
-<br />
-<Link>What is performance consulting?</Link>
-<br />
 
-<br />
-<p>Or take a look at these lists of external resouces:</p>
     <input type="radio" name="tabs" id="tab1"/> 
       <label for="tab1">Read more...</label>  
     <br />
@@ -30,10 +20,10 @@ const SecondPage = () => (
       <label for="tab2">Sites</label>
     <br />
     <input type="radio" name="tabs" id="tab3" />
-    <label for="tab3">Articles</label> 
+    <label for="tab3">Articles!</label> 
     <br />
     <input type="radio" name="tabs" id="tab4" />
-    <label for="tab4">Books</label>
+    <label for="tab4">Books!</label>
     <br />
     <br />
 

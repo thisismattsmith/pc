@@ -19,10 +19,12 @@
 
 .listItem::marker {
   color: #e95800;
+  content: '👉 ';
 }
 
 .listItem:nth-child(2)::marker {
   color: #159bf3;
+  content: '❤️ ';
 }
 
 .listItem:nth-child(3)::marker {
@@ -51,4 +53,12 @@
 .intro {
   max-width: none;
   line-height: var(--line-height-loose);
+}
+
+.menuItem {
+
+}
+
+.menuItem:hover {
+  content: "👈";
 }

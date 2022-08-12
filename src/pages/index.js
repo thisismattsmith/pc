@@ -8,14 +8,14 @@ import * as styles from "../components/index.module.css"
 
 const links = [
   {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
+    text: "thisismattsmith.com",
+    url: "https://www.thisismattsmith.com",
     description:
       "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
   },
   {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
+    text: "Useful Stuff",
+    url: "https://usefulstuff.email",
     description:
       "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
   },
@@ -47,13 +47,13 @@ const samplePageLinks = [
 ]
 
 const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
+  { text: "email", url: "https://gatsby.dev/discord" },
   {
     text: "Documentation",
     url: "https://gatsbyjs.com/docs/",
   },
   {
-    text: "Starters",
+    text: "LinkedIn",
     url: "https://gatsbyjs.com/starters/",
   },
   {
@@ -86,7 +86,7 @@ const IndexPage = () => (
         Welcome to <b>Gatsby!</b>
       </h1>
       <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
+        <b>Get in touch:</b>{" "}
         {samplePageLinks.map((link, i) => (
           <React.Fragment key={link.url}>
             <Link to={link.url}>{link.text}</Link>
@@ -94,7 +94,6 @@ const IndexPage = () => (
           </React.Fragment>
         ))}
         <br />
-        Edit <code>src/pages/index.js</code> to update this page.
       </p>
     </div>
     <ul className={styles.list}>
@@ -102,7 +101,9 @@ const IndexPage = () => (
         <li key={link.url} className={styles.listItem}>
           <a
             className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
+            href={`${link.url}`}
+            target="_blank"
+            rel="noreferrer noopener"
           >
             {link.text} ↗
           </a>
